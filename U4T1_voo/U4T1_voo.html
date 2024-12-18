@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="U4T1_voo.css">
+    
+</head>
+<body><p>Regristro de Vacunacion Centro de Salud de Bormujos</p>
+    
+    <form id="formulario">
+        <label for="nombre">Nombre del paciente:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" placeholder="Escribe tu dni">
+
+        <label for="vacuna">Fabricante de la vacuna</label>
+        <select id="vacuna" name="vacuna">
+            <option value="">Selecciona la vacuna</option>
+            <option value="vacuna1">Oxford-Astrazeneca</option>
+            <option value="vacuna2">Moderna</option>
+            <option value="vacuna3">Pfizer-Biontech</option>
+        </select>
+
+        <label for="contraseña">Password:</label>
+        <input type="password" id="contraseña" name="contraseña">
+
+        <input name="enviar" type="submit" value="Enviar" id="enviar">
+        <input name="reset" type="reset" value="Borrar datos">
+
+    </form>
+    
+    <div class="errores"></div>
+
+   
+    <script src="U4T1_voo.js"></script>
+</body>
+</html>
